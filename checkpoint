@@ -1,0 +1,2 @@
+model_checkpoint_path: "P3Model"
+all_model_checkpoint_paths: "P3Model"
