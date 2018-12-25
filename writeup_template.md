@@ -17,14 +17,14 @@ The goals / steps of this project are the following:
 
 [//]: # (Image References)
 
-[image1]: ./German_Traffic_Signs/GerTrafSign1.jpg "German Traffic Sign 1"
-[image2]: ./German_Traffic_Signs/GerTrafSign2.jpg "German Traffic Sign 2"
-[image3]: ./German_Traffic_Signs/GerTrafSign3.jpg "German Traffic Sign 3"
-[image4]: ./German_Traffic_Signs/GerTrafSign4.jpg "German Traffic Sign 4"
-[image5]: ./German_Traffic_Signs/GerTrafSign5.jpg "German Traffic Sign 5"
-[image6]: ./German_Traffic_Signs/GerTrafSign6.jpg "German Traffic Sign 6"
-[image7]: ./German_Traffic_Signs/GerTrafSign7.jpg "German Traffic Sign 7"
-[image8]: ./Vis.jpg "Visualization"
+[image1]: ./German_Traffic_Signs/GerTrafSign1.jpeg "Sign 1"
+[image2]: ./German_Traffic_Signs/GerTrafSign2.jpeg "Sign 2"
+[image3]: ./German_Traffic_Signs/GerTrafSign3.jpeg "Sign 3"
+[image4]: ./German_Traffic_Signs/GerTrafSign4.jpeg "Sign 4"
+[image5]: ./German_Traffic_Signs/GerTrafSign5.jpeg "Sign 5"
+[image6]: ./German_Traffic_Signs/GerTrafSign6.jpeg "Sign 6"
+[image7]: ./German_Traffic_Signs/GerTrafSign7.jpeg "Sign 7"
+[image8]: ./Vis.jpeg "Visualization"
 [image9]: ./German_Traffic_Signs/1.png "1"
 [image10]: ./German_Traffic_Signs/2.png "2"
 [image11]: ./German_Traffic_Signs/3.png "3"
@@ -110,13 +110,13 @@ This model has accurately predicted output for new german traffic sign images wi
 
 #### 1. Choose five German traffic signs found on the web and provide them in the report. For each image, discuss what quality or qualities might be difficult to classify.
 
-Here are five German traffic signs that I found on the web:
+Here are Seven German traffic signs that I found on the web:
 
 ![alt text][image4] ![alt text][image5] ![alt text][image6] 
 ![alt text][image7] ![alt text][image2] ![alt text][image1]
 ![alt text][image3]
 
-German Traffic Signs after Resizing to (32*32*3)
+German Traffic Signs after Resizing to (32,32,3)
 
 ![alt text][image9] ![alt text][image10] ![alt text][image11] 
 ![alt text][image14] ![alt text][image13] ![alt text][image12]
@@ -129,31 +129,16 @@ Here are the results of the prediction:
 
 | Image			        |     Prediction	        					| 
 |:---------------------:|:---------------------------------------------:| 
-| Stop Sign      		| Stop sign   									| 
-| U-turn     			| U-turn 										|
-| Yield					| Yield											|
-| 100 km/h	      		| Bumpy Road					 				|
-| Slippery Road			| Slippery Road      							|
+|Pedestrian     		| Speed limit (30km/h)   									| 
+| No entry     			| No entry 										|
+| No Pass					| Go straight or left											|
+| Turn right ahead	      		| Turn right ahead					 				|
+| Yield			| Yield      							|
+| Road work			| Road work      							|
+| Stop			| Stop      							|
 
 
-The model was able to correctly guess 4 of the 5 traffic signs, which gives an accuracy of 80%. This compares favorably to the accuracy on the test set of ...
-
-#### 3. Describe how certain the model is when predicting on each of the five new images by looking at the softmax probabilities for each prediction. Provide the top 5 softmax probabilities for each image along with the sign type of each probability. (OPTIONAL: as described in the "Stand Out Suggestions" part of the rubric, visualizations can also be provided such as bar charts)
-
-The code for making predictions on my final model is located in the 11th cell of the Ipython notebook.
-
-For the first image, the model is relatively sure that this is a stop sign (probability of 0.6), and the image does contain a stop sign. The top five soft max probabilities were
-
-| Probability         	|     Prediction	        					| 
-|:---------------------:|:---------------------------------------------:| 
-| .60         			| Stop sign   									| 
-| .20     				| U-turn 										|
-| .05					| Yield											|
-| .04	      			| Bumpy Road					 				|
-| .01				    | Slippery Road      							|
-
-
-For the second image ... 
+The model was able to correctly guess 4 of the 7 traffic signs, which gives an accuracy of 57%. 
 
 ### (Optional) Visualizing the Neural Network (See Step 4 of the Ipython notebook for more details)
 #### 1. Discuss the visual output of your trained network's feature maps. What characteristics did the neural network use to make classifications?
